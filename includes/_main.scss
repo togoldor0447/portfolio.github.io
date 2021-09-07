@@ -1,0 +1,96 @@
+.main {
+  width: 100%;
+  display: flex;
+  .row {
+    width: 50%;
+    height: 700px;
+    background-image: url(../image/240623270_1139738409854522_5487446309692016211_n.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding-top: 20rem;
+    h1 {
+      text-align: left;
+      font-size: 12px;
+    }
+  }
+  .wrap {
+    width: 50%;
+    height: 700px;
+    background-image: url(../image/sakura.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 15rem;
+    padding-left: 10rem;
+    .wow {
+      width: 80%;
+      text-align: left;
+      h4 {
+        font-family: $navfont;
+        color: red;
+      }
+      .grac {
+        height: 20px;
+        background-color: gray;
+        border-radius: 10px;
+        margin-bottom: 0.3rem;
+        div {
+          height: 100%;
+          color: #fff;
+          text-align: left;
+          background-color: blue;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+.section {
+  width: 100%;
+  height: 650px;
+  background-image: url(../image/barilaga.jpg);
+  display: flex;
+  .items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box {
+      width: 50%;
+      display: flex;
+
+      .item {
+        width: 50%;
+        height: 300px;
+        border: 2px solid black;
+        padding-top: 15rem;
+        border-radius: 10px;
+        margin: 0.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          background: rgba(114, 245, 102, 0.972);
+          opacity: 0.9;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+          transition: 1s ease-in-out;
+        }
+        &:hover:after {
+          transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+        }
+      }
+    }
+  }
+}

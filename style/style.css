@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Reem+Kufi:wght@600&family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+span {
+  color: red;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  margin: auto;
+  background-image: url(../image/svm.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.container .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .head .logo {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.container .menu {
+  padding-top: 2rem;
+}
+
+.container .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .menu ul li {
+  padding-right: 2rem;
+  list-style: none;
+}
+
+.container .menu ul li a {
+  text-decoration: none;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1rem;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+  cursor: pointer;
+}
+
+.container .menu ul li a:hover {
+  color: blue;
+  border-color: #7a94ae;
+}
+
+.container .menu ul li a.active {
+  color: blue;
+  border-color: #7a94ae;
+}
+
+.container .profile {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10rem;
+}
+
+.container .profile .text {
+  font-family: "Alfa Slab One", cursive;
+  text-transform: uppercase;
+}
+
+.container .profile .text h2 {
+  text-align: center;
+}
+
+.container .profile .textt {
+  padding-top: 3rem;
+  font-family: "roboto";
+}
+
+.container .profile .textt .button {
+  width: 200px;
+  height: 60px;
+  border: 1px solid #c3c3d8;
+  border-radius: 10px;
+}
+
+.container .profile .textt .button:hover {
+  background-color: #c3c3d8;
+  color: blue;
+}
+
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .row {
+  width: 50%;
+  height: 700px;
+  background-image: url(../image/240623270_1139738409854522_5487446309692016211_n.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding-top: 20rem;
+}
+
+.main .row h1 {
+  text-align: left;
+}
+
+.main .wrap {
+  width: 50%;
+  height: 700px;
+  background-image: url(../image/sakura.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15rem;
+  padding-left: 10rem;
+}
+
+.main .wrap .wow {
+  width: 80%;
+  text-align: left;
+}
+
+.main .wrap .wow h4 {
+  font-family: "Alfa Slab One", cursive;
+  color: red;
+}
+
+.main .wrap .wow .grac {
+  height: 20px;
+  background-color: gray;
+  border-radius: 10px;
+  margin-bottom: 0.3rem;
+}
+
+.main .wrap .wow .grac div {
+  height: 100%;
+  color: #fff;
+  text-align: left;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.section {
+  width: 100%;
+  height: 650px;
+  background-image: url(../image/barilaga.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .items .box {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .items .box .item {
+  width: 50%;
+  height: 300px;
+  border: 2px solid black;
+  padding-top: 15rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.section .items .box .item:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: rgba(114, 245, 102, 0.972);
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+          transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.section .items .box .item:hover:after {
+  -webkit-transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+          transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+
+.footer {
+  width: 100%;
+  height: 650px;
+  background-image: url(../image/barilaga.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .items .box {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .items .box .item {
+  width: 50%;
+  height: 300px;
+  border: 2px solid black;
+  padding-top: 15rem;
+  border-radius: 10px;
+  margin: 0.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.footer .items .box .item:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: red;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+          transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
+}
+
+.footer .items .box .item:hover:after {
+  -webkit-transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+          transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+}
+/*# sourceMappingURL=style.css.map */
